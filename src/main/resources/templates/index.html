@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+ <link rel="stylesheet" th:href="@{/css/css2.css}" type="text/css">
+    <title>CodeHub</title>
+    <style>
+		h1{
+			color: orange;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+		margin: 0;
+		
+		
+		}
+		 body {
+			 background-image: url('/images/images.jpg');
+    background-size: cover;
+    background-position: center;
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+           align-items: flex-start; /* Align content to the left */
+            justify-content: center;
+             margin: 0;
+            padding: 0;
+        }
+    .header {
+            width: 100%;
+            text-align: left;
+            padding: 20px ;
+            }
+         h4, h6 {
+            color: springgreen;
+            margin: 15px 0;
+        }
+.btn-primary {
+            background-color: darkmagenta;
+            border: none;
+            margin-top: 95px;
+            margin-left: 150px; 
+            
+        }
+
+        .btn-secondary {
+            background-color: olivedrab;
+            border: none;
+             margin-left: 150px;
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            background-color: #23272b;
+        }
+       
+       
+	</style>
+  </head>
+  <body>
+  
+    <div class="header">
+        <h1>Welcome to CodeHub!</h1>
+    </div>
+   <div class="container">
+     <h4>CodeHub is the best E-learning platform...</h4>
+     <h6>Find and purchase courses to enhance your Coding Knowledge</h3>
+ <button class="btn btn-primary" onclick="location.href='/login';">Login</button>
+    <br><br>
+  <button class="btn btn-secondary" onclick="location.href='/register';">Register</button>
+  </div>
+
+   
+  </body>
+</html>
